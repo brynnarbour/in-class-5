@@ -1,0 +1,71 @@
+:root {
+    --white: #F2F2F2;
+    --yellow: #dca530;
+    --dk-yellow: #fcc650;
+    --black: #181413;
+    --brown: #684551;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.inner-container {
+    padding: 0 1rem;
+}
+
+h1 {
+    font-family: 'Hurricane', cursive;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* ************************** header ************************ */
+header {
+    background-color: var(--brown);
+    color: var(--white);
+}
+
+header p {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+header button {
+    display: flex;
+    align-items: center;
+    background: var(--brown);
+    border: none;
+    color: var(--white);
+}
+
+header svg {
+    width: 2.375rem;
+}
+
+header .btn {
+    background-color: var(--yellow);
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    color: var(--black);
+}
+
+header .signup {
+    color: var(--white);
+    text-decoration: none;
+}
+
+ul.sign-btns  {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
