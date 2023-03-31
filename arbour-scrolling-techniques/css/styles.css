@@ -8,29 +8,51 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    color: var(--black);
 }
 
 .inner-container {
     padding: 0 1rem;
 }
 
+.btn {
+    background-color: var(--yellow);
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    color: var(--black);
+    display: inline-block;
+}
+
 h1 {
     font-family: 'Hurricane', cursive;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     font-weight: 400;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 300
+}
+
+p {
+    margin-bottom: 1.5rem;
 }
 
 /* ************************** header ************************ */
 header {
     background-color: var(--brown);
     color: var(--white);
+    position: sticky;
+    top: -6rem;
 }
 
 header p {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     text-align: center;
+    margin-bottom: 0;
 }
 
 header button {
@@ -43,14 +65,6 @@ header button {
 
 header svg {
     width: 2.375rem;
-}
-
-header .btn {
-    background-color: var(--yellow);
-    padding: 0.5rem 1rem;
-    border-radius: 0.2rem;
-    text-decoration: none;
-    color: var(--black);
 }
 
 header .signup {
@@ -68,4 +82,75 @@ ul.sign-btns  {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+/* ************************** banner ********************** */
+section.banner {
+    background-image: url(../img/hero.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+}
+
+.banner .inner-container {
+    min-height: calc(100vh - 11rem);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+/* ************************** parallax ******************** */
+section.parallax {
+    background-image: url(../img/splash-mobile.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.parallax .inner-container {
+    padding: 1rem 1rem 1rem 45%;
+}
+
+.parallax h2 {
+    font-size: 1.875rem;
+}
+
+/* ************************** h-scroll ******************** */
+section.h-scroll {
+    background-color: var(--white);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+section.h-scroll section {
+    background-color: #fff;
+    margin: 1rem 1rem 2rem 1rem;
+    padding: 1rem;
+    flex: 0 0 24rem;
+}
+
+.h-scroll p:last-of-type {
+    text-align: left;
+}
+
+.h-scroll p:first-of-type {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.h-scroll h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.scroll-container {
+    display: flex;
+    overflow: scroll;
+}
+
+.h-scroll img {
+    margin-bottom: 1rem;
 }
