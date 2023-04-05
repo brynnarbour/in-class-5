@@ -13,6 +13,8 @@ body {
 
 .inner-container {
     padding: 0 1rem;
+    max-width: 64rem;
+    margin: 0 auto;
 }
 
 .btn {
@@ -72,7 +74,7 @@ header .signup {
     text-decoration: none;
 }
 
-ul.sign-btns  {
+ul.sign-btns {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -86,7 +88,7 @@ ul.sign-btns  {
 
 /* ************************** banner ********************** */
 section.banner {
-    background-image: url(../img/hero.webp);
+    background-image: url(../img/hero-small.webp);
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--white);
@@ -138,7 +140,7 @@ section.h-scroll section {
 
 .h-scroll p:first-of-type {
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .h-scroll h2 {
@@ -153,4 +155,95 @@ section.h-scroll section {
 
 .h-scroll img {
     margin-bottom: 1rem;
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 0.5rem;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background-color: #e2e2e2;
+    border-radius: 0.5rem;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--yellow);
+}
+
+/* ********************** footer ******************* */
+footer {
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 3rem 0;
+}
+
+footer h2 {
+    font-size: 2rem;
+}
+
+form {
+    margin-bottom: 2rem;
+}
+
+.email-signup {
+    display: flex;
+    align-items: center;
+}
+
+input[type="submit"] {
+    background-color: var(--yellow);
+    border: 1px solid var(--yellow);
+    height: 2.5rem;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--dk-yellow);
+}
+
+input[type="email"] {
+    border: none;
+    padding: 0.5rem;
+    flex: 1 1 100%;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.footer-nav h2 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: var(--yellow);
+}
+
+@media screen and (min-width: 900px) {
+    section.banner {
+        background-image: url(../img/hero-medium.webp);
+    }
+
+    section.parallax {
+        background-image: url(../img/splash.webp);
+    }
+
+    .parallax .inner-container {
+        padding: 1rem 1rem 1rem 30%;
+    }
+
+    form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    section.banner {
+        background-image: url(../img/hero-large.webp);
+    }
 }
